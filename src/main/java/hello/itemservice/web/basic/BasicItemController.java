@@ -29,7 +29,9 @@ public class BasicItemController {
         model.addAttribute("items",items);
         return "basic/items";
     }
-
+    /*
+    * 테스트용 데이터 추가
+    */
     @PostConstruct
     public void init(){
         itemRepository.save(new Item("itemA",10000,10));
